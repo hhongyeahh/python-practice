@@ -11,6 +11,7 @@ while number != 4:
     print(prompt)
     number = int(input())
 
+
 # break
 coffee = 10
 money = 300
@@ -21,12 +22,15 @@ while money:
     if coffee == 0:
         print("커피가 다 떨어졌습니다. 판매를 중지합니다.")
         break
+
+
 # continue
 a = 0
 while a < 10:
     a = a + 1
     if a % 2 == 0: continue
     print(a)
+
 
 # 무한루프
 # while True:

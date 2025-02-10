@@ -14,6 +14,7 @@ for mark in marks:
         continue
     print("%d번 학생 축하합니다. 합격입니다." % number)
 
+
 # range
 a = range(10) # 0,1,2,3,4,5,6,7,8,9
 print(a)
@@ -38,6 +39,7 @@ for i in range(2,10):
     for j in range(1,10):
         print(i*j, end=" ")
     print('')
+
 
 # list comprehension
 a = [1,2,3,4]

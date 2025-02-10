@@ -4,6 +4,7 @@ if money >= 3000:
 else:
         print("걸어가라")
 
+
 # and, or, not
 money = 2000
 card = True
@@ -11,6 +12,7 @@ if money >= 3000 or card:
     print("택시를 타고 가라")
 else:
     print("걸어가라")
+
 
 # in, not in
 print( 1 in [1,2,3])
@@ -31,6 +33,7 @@ elif card:
     print("택시를 타고 가라")
 else:
     print("카드를 꺼내라")
+
 
 # 조건부 표현식
 score = 70
