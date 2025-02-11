@@ -25,5 +25,5 @@ print(s1)
 s1.update([5, 6, 7]) # update : 값 여러개 추가
 print(s1)
 
-s1.remove(2) # 특정 값 제거ㅓ
+s1.remove(2) # 특정 값 제거
 print(s1)
