@@ -21,8 +21,6 @@ print(a)  # none 출력 -> return 값이 없기 때문에
 # 입력값도 리턴값도 없는 함수
 def say():
     print('Hi')
-
-
 say()
 
 
@@ -65,3 +63,52 @@ def print_kwargs(**kwargs):
     print(kwargs)
 print_kwargs(a=1)
 print_kwargs(name='foo',age=3)
+
+
+# 함수의 리턴값은 언제나 하나
+def add_and_mul(a,b):
+    return a+b, a*b
+result = add_and_mul(3,4)
+print(result) # 튜플값 하나인 (a+b, a*b) 로 리턴됨
+result1, result2 = add_and_mul(3,4)
+print(result1, result2) # 튜플 값을 2개로 분리하여 받고 싶다면 이렇게 호출
+
+
+# 매개변수 초깃값 미리 설정
+def say_myself(name,age,man=True):
+    print("나의 이름은 %s입니다." %name)
+    print("나이는 %d살입니다." %age)
+    if man:
+        print("남자입니다.")
+    else:
+        print("여자입니다.")
+say_myself("김도록",27)
+say_myself("김혜원",27,False)
+
+
+# 변수의 효력 범위
+a = 1
+def vartest(a):
+    a = a + 1
+vartest(a)
+print(a) # a : 1
+
+a = 1
+def vartest(a):
+    a = a + 1
+    return a # return
+a = vartest(a)
+print(a)
+
+g = 1
+def vartest():
+    global g # 전역변수
+    g = g + 1
+vartest()
+print(g)
+
+
+# lambda 예약어
+add = lambda a,b:a+b # 함수이름 = lambda 매개변수 ... : 매개변수를 이용한 표현식
+result = add(3,5)
+print(result)
